@@ -1,0 +1,45 @@
+.services {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem 4rem;
+}
+
+.second img {
+  margin-bottom: 3rem;
+}
+.services button {
+  margin: 2rem;
+  padding: 10px 2.2rem;
+}
+
+.serv-animate {
+  animation: services 1.2s forwards ease-out;
+}
+.services h1,
+.special {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 800;
+  text-shadow: 2px 2px 16px #0c06ff, 2px 2px 18px #0c06ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.services img {
+  margin-top: 5rem;
+}
+
+@keyframes services {
+  from {
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

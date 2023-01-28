@@ -1,0 +1,166 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --orange: orange;
+  --red: red;
+  --green: green;
+  --main-color: #000;
+  --main-text-color: #fff;
+  --text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000,
+    0 -18px 40px #f00, 2px 2px 18px rgba(206, 89, 55, 0), 0 -1px 4px #fff,
+    0 -2px 10px #ff0;
+  --box-shadow: #fff 0 -1px 4px, rgb(132, 0, 255) 0 -2px 10px,
+    #006eff 0 -10px 10px, blue 0 -18px 20px,
+    0px 0px 5px 6px rgba(255, 255, 255, 0);
+  --webkit-button-shadow: #fff 0 -1px 4px, #ff0 0 -2px 10px,
+    #ff8000 0 -10px 20px, red 0 -18px 40px,
+    0px 0px 5px 6px rgba(255, 255, 255, 0);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-color) !important;
+}
+
+.container-fluid {
+  padding: 0 10%;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #fff;
+}
+/**** NAVBAR STYLES ********/
+
+button {
+  font-weight: 550 !important;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+.checked {
+  fill: var(--orange);
+}
+/******* PRODUCT ITEM STYLE **********/
+
+.aForm {
+  color: var(--main-text-color);
+  max-width: 40%;
+  margin: 3rem auto;
+  padding: 1rem 1rem 3rem 1rem;
+  border-radius: 8px;
+  animation: common 1.2s ease-out forwards;
+}
+
+/******* Reviews Section **********/
+/*  I DIDNOT MAKE ONE YET */
+
+/* .reviews-section {
+  margin: 3rem;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+  flex-direction: column;
+  transition: 0.8s; /* fee elskrata}
+
+
+.reviews-section ul,
+.reviews-section ul li {
+  margin: 0;
+  padding: 0;
+}
+.review-item {
+  border: none;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+.review-item li {
+  border: none;
+  margin: 0px;
+}
+.reviewer,
+.review-rate {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.review-date {
+  font-size: 14px;
+  color: var(--grey);
+} */
+
+/******** CART_LIST STYLES ************/
+/**** CART ITEM COMPOENENT STILL NEED MEDIA QUERIES *****/
+
+.invalid {
+  background-color: rgba(255, 88, 88, 0.775);
+  border: rgb(186, 30, 30);
+}
+
+@media screen and (max-width: 790px) {
+  .aForm {
+    max-width: 60%;
+    margin: 3rem auto;
+  }
+}
+
+.bi-facebook {
+  fill: white;
+  background-color: blue;
+}
+
+.bi-twitter {
+  fill: #1d9bf0;
+}
+
+.bi-whatsapp {
+  fill: #48e560;
+}
+
+.bi-trash3-fill:hover {
+  fill: rgb(194, 21, 21);
+}
+
+@keyframes common {
+  from {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-animate {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

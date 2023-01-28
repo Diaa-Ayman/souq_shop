@@ -1,0 +1,144 @@
+/*CART ITEM COMPONENT STYLES */
+
+.list-item {
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  color: var(--main-text-color);
+  animation: scale-animate 1s forwards ease-out;
+}
+
+.cart-item-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 450;
+  text-transform: capitalize;
+}
+
+.cart-item-desc img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.cart-item-about {
+  background-color: transparent;
+  color: #fff;
+}
+.cart-item-about p {
+  color: #ccc;
+}
+
+.cart-item-about .item-name {
+  font-size: 20px;
+}
+
+.cart-item-info {
+  font-size: 14px;
+}
+
+/********** CART LIST STYLES ***********/
+
+.cart-list {
+  margin: 1rem;
+  animation: common 1s ease-in-out forwards;
+}
+
+.cart-list h3 {
+  color: var(--main-text-color);
+  margin: 2rem 2rem 1rem 0;
+}
+
+.order-card {
+  width: 15rem;
+  margin-left: 4rem;
+}
+.cart-item-qty {
+  width: 20%;
+  flex-direction: column;
+}
+
+.cart-amount-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  margin: 0 10px;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  margin: 5px 0 5px;
+  color: #fff;
+}
+
+.cart-amount-control:hover {
+  background-color: #eee;
+  transition: 0.5s;
+  color: blue;
+}
+.cart-item-number {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.cart-item-price,
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/******* STYLE FOR EMPTY CART *******/
+.empty {
+  color: var(--main-text-color);
+  animation: scale-animate 1s forwards ease-out;
+}
+
+.empty button {
+  color: var(--main-text-color);
+  border-radius: 0;
+  margin-top: 3rem;
+}
+
+/********* MEDIA QUERIES AND KEYfRAMES ********/
+@keyframes common {
+  from {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-animate {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .cart-item-info {
+    display: none;
+  }
+  .order-card {
+    margin: 0 0 6.5rem 0;
+  }
+}

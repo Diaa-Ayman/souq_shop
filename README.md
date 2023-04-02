@@ -1,6 +1,6 @@
 # souq_shop
 
-# Built With React JS, Redux
-# Demo
+Built With React JS, Redux and CSS
 
-## https://mobbile-store-deploy.web.app/
+# Demo
+ https://mobbile-store-deploy.web.app/
